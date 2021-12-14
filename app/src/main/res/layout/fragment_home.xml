@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/flushing2"
+        android:scaleType="centerCrop"
+        ></ImageView>
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_about_flushing1" />
+    <TextView
+        android:id="@+id/text_link_to_wiki"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/wiki_link"
+        android:textColor="#0000EE"></TextView>
+
+</LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:background="@color/black">
+    </View>
+
+    <ImageView
+        android:id="@+id/location_image"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"></ImageView>
+
+    <TextView
+        android:id="@+id/location_name_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/location_name"
+        tools:text=""></TextView>
+
+    <TextView
+        android:id="@+id/location_description_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/location_description"></TextView>
+
+    <RelativeLayout
+        android:id="@+id/link_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_link"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_link_24"></ImageView>
+
+        <TextView
+            android:id="@+id/link_text"
+            android:layout_toRightOf="@id/image_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text=""></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/map_layout">
+
+        <ImageView
+            android:id="@+id/image_map_link"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_place_24"></ImageView>
+
+        <TextView
+            android:id="@+id/map_location_text"
+            android:layout_toRightOf="@id/image_map_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text=""></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_phone_link"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_call_24"></ImageView>
+
+        <TextView
+            android:id="@+id/phone_text"
+            android:layout_toRightOf="@id/image_phone_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text=""></TextView>
+    </RelativeLayout>
+
+    <View android:layout_height="2dp"
+        android:layout_width="match_parent"
+        android:background="@color/black">
+    </View>
+
+</LinearLayout>
+

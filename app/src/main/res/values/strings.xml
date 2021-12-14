@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Flushing Tour App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="textview_about_flushing1">Flushing is a neighborhood in the north-central portion of the New York City borough of Queens. The neighborhood is the fourth-largest central business district in New York City. Downtown Flushing, a major commercial and retail area centered on the intersection of Main Street and Roosevelt Avenue, is the third-busiest intersection in New York City, behind Times Square and Herald Square.</string>
+    <string name="wiki_link"><a href="https://en.wikipedia.org/wiki/Flushing,_Queens">Taken from Wikipedia</a></string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
