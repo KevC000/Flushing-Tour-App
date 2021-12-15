@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
         viewPager2.setAdapter(fragmentAdapter);
 
         //Set text for each tab
-        tabLayout.addTab(tabLayout.newTab().setText("Home"));
-        tabLayout.addTab(tabLayout.newTab().setText("Food/Shopping"));
-        tabLayout.addTab(tabLayout.newTab().setText("SightSeeing"));
-        tabLayout.addTab(tabLayout.newTab().setText("Hotels"));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.home_tab));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.food_shopping_tab));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.sightseeing_tab));
+        tabLayout.addTab(tabLayout.newTab().setText(R.string.hotels_tab));
 
 //Tab selector and swipe
 tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {

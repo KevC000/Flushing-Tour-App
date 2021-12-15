@@ -70,41 +70,40 @@ public class FoodShoppingFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_location_list, container, false);
 
         //ArrayList of the locations
-        foodAndShopping.add(new Location("New World Mall",
-                "Located in the heart of downtown Flushing and a short distance away from other heavily populated Queens neighborhoods, NWM stands to attract thousands of residents within the areas. The stunning three-story, cross-hatched window wall of clear glass on the exterior of the building has already received rave reviews from local community publications. This beautiful new mall is sure to enhance the appearance of the busiest block in Flushing and it reflects the company’s commitment to the community. The Mall expects to create over 1,000 new jobs and to promote social and economic awareness by hosting various community events and programs throughout the year."
+        foodAndShopping.add(new Location(getString(R.string.new_world_name),
+                getString(R.string.new_world_desc)
                 , R.drawable.new_world,
-                "https://www.newworldmallny.com/",
-                "136-20 Roosevelt Ave" + "\nFlushing, NY 11354" + "\nUSA",
-                "(718) 353-0551"
+                getString(R.string.new_world_link),
+                getString(R.string.new_world_address),
+                getString(R.string.new_world_phone)
         ));
-        foodAndShopping.add(new Location("Sky View",
-                "THERE’S A RHYTHM TO THIS PART OF THE CITY. IT BEATS WITH EXCITEMENT LIKE A LOUD, RED DRUM. THE NOISE NEVER STOPS AND THE PEOPLE NEVER REST.\n" +
+        foodAndShopping.add(new Location(getString(R.string.sky_view_name),
+                getString(R.string.sky_view_desc) +
                         "\n" +
-                        "And in the middle of it all is Skyview. We see you, we’re here for you, and our doors are open for whatever you need, whenever you need it.\n" +
+                        getString(R.string.sky_view_desc2) +
                         "\n" +
-                        "We feed you when you’re hungry, we’re in-step with your style, and we immerse you in the culture that makes this neighborhood so special. We’re a place to relax, to have fun, to indulge and to come together. You belong at The Shops at Skyview, because we know this is your place.",
+                        getString(R.string.sky_view_desc3),
                 R.drawable.skyview,
-                "https://theshopsatskyviewny.com",
-                "40-24 College Point Boulevard\n" +
-                        "Flushing, NY 11354",
-                "(718)460-2000"
+                getString(R.string.sky_view_link),
+                getString(R.string.sky_view_address),
+                getString(R.string.sky_view_phone)
         ));
         foodAndShopping.add(new Location(
-                        "Queens Crossing",
-                        "F&T Group is proud to present Queens Crossing, a state of the art mixed-use development in the heart of downtown Flushing, one of New York City’s most active and most diverse urban areas. Designed by world-renowned architects and engineers, the Thorton Tomasetti Group, Queens Crossing features a bold yet elegant architectural design that enhances its urban surroundings with a distinctive street presence. Behind its graceful curvilinear Façade, the building contains 110,000 sq. ft. of retail space, 37,000 sq. ft. entertainment and dining areas, full floor community facility, and 144,000 sq. ft. office condominiums, all served by 86,000 sq. ft. of valet parking. A visitor to this venue will discover specialty retail stores, both casual and fine dining options, and a large banquet hall at the lower levels of the building. Located on the fourth floor is Long Island Business Institute, a community college, and several medical offices. Floors five to eleven are professional offices, housing medical offices, lawyers, financial advisors, real estate and travel agencies. The top floor of Queens Crossing hosts the headquarters for the F&T Group.",
+                        getString(R.string.queenscrossing_name),
+                        getString(R.string.queenscrossing_desc),
                         R.drawable.queens_crossing,
-                        "http://www.queenscrossing.com/",
-                        "136-17 39th Ave." + "\nFlushing, New York" + "\n11354",
-                        "N/A"
+                        getString(R.string.queenscrossing_link),
+                        getString(R.string.queenscrossing_address),
+                        getString(R.string.no_phone)
                 )
         );
         foodAndShopping.add(new Location(
-                "One Fulton Square",
-                "One Fulton Square offers a curated selection of authentic Asian eateries, including Chinese, Korean, Japanese, Malaysian and Taiwanese options. These bustling restaurants and bars are a vibrant addition to the nightlife of downtown Flushing and further advance the development of this flourishing neighborhood.",
+                getString(R.string.fulton_name),
+                getString(R.string.fulton_desc),
                 R.drawable.fulton,
-                "http://www.onefultonsquareflushing.com/",
-                "39-16 Prince Street" + "\nFlushing, NY 11354",
-                "N/A"
+                getString(R.string.fulton_link),
+                getString(R.string.fulton_address),
+                getString(R.string.no_phone)
         ));
 
 //Setting Recycler  View

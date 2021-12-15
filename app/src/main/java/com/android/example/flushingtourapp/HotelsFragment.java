@@ -69,27 +69,26 @@ public class HotelsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_location_list,container,false);
 
         //ArrayList of hotel locations
-        hotels.add(new Location("Hyatt Place Flushing",
-                "Hyatt Place Flushing/LaGuardia Airport is an ultramodern hotel. It offers 168 guestrooms and one of the most unique rooftop spaces in the city—an outdoor garden, event spaces and restaurant and lounge with spectacular views of the Manhattan skyline.",
+        hotels.add(new Location(getString(R.string.hyatt_name),
+                getString(R.string.hyatt_desc),
                 R.drawable.hyatt,
-                "https://www.hyatt.com/en-US/hotel/new-york/hyatt-place-flushing-laguardia-airport/nyczf",
-                "133-42 39th Avenue, Flushing, New York, United States, 11354",
-                "(718)888-1234"));
+                getString(R.string.hyatt_link),
+                getString(R.string.hyatt_address),
+                getString(R.string.hyatt_phone)));
         hotels.add(new Location(
-                "The Parc Hotel",
-                "Trips to New York City don’t have to be expensive. Take advantage of the specials and deals at The Parc Hotel to save big on your upcoming vacation or business trip. All of our hotel specials in Flushing include complimentary WiFi and daily buffet breakfast.",
+                getString(R.string.parc_name),
+                getString(R.string.parc_desc),
                 R.drawable.parc,
-                "https://www.theparchotel.com/",
-                "3916 College Point Blvd"+"\nFlushing, NY 11354",
-                "(718) 358-8897"));
+                getString(R.string.parc_link),
+                getString(R.string.parc_address),
+                getString(R.string.parc_phone)));
         hotels.add(new Location(
-                "Marco Laguardia Hotel",
-                "Marco LaGuardia Hotel & Suites is the ideal place to unwind amid the high-vibe buzz of New York City. Our central location in Flushing, Queens, puts you close to the action and serves as a perfect hub for your exploration of the city.",
+                getString(R.string.marco_name),
+                getString(R.string.marco_desc),
                 R.drawable.marco,
-                "https://www.marcolaguardiahotel.com/",
-                "137-07 Northern Boulevard\n" +
-                        "Flushing, New York 11354",
-                "(718 )445-3300"));
+                getString(R.string.marco_link),
+                getString(R.string.marco_address),
+                getString(R.string.marco_phone)));
 
         //Set adapter and recycler view
         recyclerView = view.findViewById(R.id.recyclerview);
